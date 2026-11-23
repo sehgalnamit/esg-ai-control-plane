@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: esg-ai-control-plane:local
+    ports:
+      - "8000:8000"
+    environment:
+      # Optional: set a real TypeSafe Jev API key to exercise TypeSafeJevClient
+      # instead of the default offline LocalJevStandIn. Never required.
+      - TYPESAFE_API_KEY=${TYPESAFE_API_KEY:-}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
