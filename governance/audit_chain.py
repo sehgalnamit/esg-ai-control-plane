@@ -19,7 +19,7 @@ from __future__ import annotations
 
 import hashlib
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from typing import Any
 
 from pydantic import BaseModel, Field
@@ -68,7 +68,7 @@ class AuditChain(BaseModel):
         """Append a new entry whose hash commits to the full prior chain."""
         index = len(self.entries)
         prev_hash = self.entries[-1].hash if self.entries else GENESIS_HASH
-        timestamp = datetime.now(timezone.utc).isoformat()
+        timestamp = datetime.now(UTC).isoformat()
         entry_hash = _compute_hash(index, timestamp, payload, prev_hash)
         entry = AuditEntry(
             index=index,
