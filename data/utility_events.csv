@@ -1,0 +1,9 @@
+event_id,source_ref,owner,region,kwh,unit,timestamp
+EVT-0001,meter://plant-de-01/2026-01,facilities-eu,EU-DE,15230,kWh,2026-01-05T08:00:00Z
+EVT-0002,meter://plant-fr-02/2026-01,facilities-eu,EU-FR,12.4,MWh,2026-01-05T09:00:00Z
+EVT-0003,meter://plant-us-03/2026-01,facilities-us,US-WECC,8820,kWh,2026-01-05T10:00:00Z
+EVT-0004,meter://plant-sg-01/2026-01,,APAC-SG,4100,kWh,2026-01-06T02:00:00Z
+EVT-0005,meter://plant-us-04/2026-01,facilities-us,US-PJM,-320,kWh,2026-01-06T05:00:00Z
+EVT-0006,meter://plant-xx-01/2026-01,facilities-other,XX-UNKNOWN,990,kWh,2026-01-06T06:00:00Z
+EVT-0007,meter://plant-de-02/2026-01,facilities-eu,EU-DE,2.9,MWh,2026-01-07T08:00:00Z
+EVT-0008,meter://plant-in-01/2026-01,facilities-apac,APAC-IN,6210,kWh,2026-01-07T11:00:00Z

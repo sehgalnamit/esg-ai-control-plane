@@ -1,0 +1,7 @@
+workload_id,owner,region,gpu_hours,kwh,compute_units,timestamp
+WL-TRAIN-001,ml-platform-team,US-WECC,120.0,540.0,120.0,2026-01-05T00:00:00Z
+WL-TRAIN-002,ml-platform-team,EU-DE,80.0,410.0,80.0,2026-01-05T12:00:00Z
+WL-INFER-003,recsys-team,US-PJM,300.0,610.0,300.0,2026-01-06T00:00:00Z
+WL-TRAIN-004,genai-research,APAC-SG,60.0,330.0,60.0,2026-01-06T06:00:00Z
+WL-INFER-005,genai-research,EU-FR,150.0,290.0,150.0,2026-01-07T00:00:00Z
+WL-TRAIN-006,ml-platform-team,APAC-IN,40.0,260.0,40.0,2026-01-07T10:00:00Z
